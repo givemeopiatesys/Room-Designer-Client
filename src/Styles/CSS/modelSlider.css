@@ -1,0 +1,89 @@
+.main-container-model-slider{
+    background-color: #282727;
+    width: 100%;
+    height: 580px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 85px;
+}
+.left-container-model-slider{
+    margin-left: 106px;
+    width: 800px;
+}
+.text-container-model-slider{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    text-align: center;
+
+}
+.title-model-slider{
+    margin-top: 60px;
+    font-family: Poppins, serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 64px;
+    color: white;
+    margin-bottom: 18px;
+}
+.text-model-slider{
+    text-align: left;
+    color: white;
+    font-family: Poppins, serif;
+    font-weight: 400;
+    font-size: 29px;
+}
+.input-container-model-slider{
+    display:flex;
+    flex-direction:row;
+    padding:1px;
+    margin-top: 100px;
+}
+.input-model-slider{
+    flex-grow:2;
+    /* And hide the input's outline, so the form looks like the outline */
+    border:none;
+    height: 67px;
+    font-size: 24px;
+    font-family: Poppins, serif;
+    font-style: normal;
+    font-weight: 600;
+    border-radius: 20px 0 0 20px;
+    padding-left: 20px;
+    color: #343434;;
+}
+.input-model-slider:focus{
+    outline: none;
+}
+
+.button-model-slider{
+    border: none;
+    background: #4D565D;
+    color:white;
+    width: 265px;
+    border-radius: 0 20px 20px 0;
+    font-family: Poppins, serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+}
+.right-container-model-slider{
+    margin-right: 90px;
+}
+.swiper {
+    width: 700px;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+
+}

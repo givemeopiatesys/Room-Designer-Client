@@ -1,0 +1,35 @@
+.main-container-blender{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.section-container-blender{
+    height: 600px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 168px;
+    padding-right: 200px;
+}
+.image-blender{
+
+}
+.text-container-blender{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 686px;
+}
+.title-blender{
+    font-family: Poppins,serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+}
+.description-blender{
+    font-family: Poppins,serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+}

@@ -1,0 +1,13 @@
+.main-container-section-header{
+    height: 125px;
+    display: flex;
+    align-items: center;
+
+}
+.text-section-header{
+    font-family: Poppins, serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 44px;
+    margin-left: 106px;
+}
