@@ -1,0 +1,17 @@
+.main-container-items-slider{
+    width: 100%;
+    height: 600px;
+    background-color: #282727;
+}
+.slider-items-slider {
+    margin-top: 35px;
+    width: 100%;
+    height: 100%;
+}
+
+.content-items-slider{
+    padding-top: 35px;
+    justify-content: center;
+    padding-left: 140px;
+    padding-right: 140px;
+}
