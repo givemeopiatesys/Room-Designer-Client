@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import '../Styles/CSS/reviews.css'
 import line from '../Styles/Images/Rectangle.svg'
 import logo from '../Styles/Images/logo-big.svg'
@@ -10,8 +10,9 @@ import yaroslav from '../Styles/Images/Yaroslav.jpg'
 import {Navigation, Pagination} from "swiper";
 import {ReactComponent as Next} from '../Styles/Images/Next.svg'
 import {ReactComponent as Prev} from '../Styles/Images/Prev.svg'
+import {BASE_API_URL} from "../Utils/consts";
 const Reviews = () => {
-    const reviews = [
+    const reviewslocal = [
         {
             img: jane,
             name: "Jane Lewus",
@@ -27,6 +28,14 @@ const Reviews = () => {
             id: 2
         },
     ]
+    const [reviews,setReviews] = useState('');
+
+    useEffect(() => {
+        fetch(BASE_API_URL + "reviews")
+            .then(response => response.json())
+            .then(async data => setReviews(data))
+    }, [])
+
     return (
         <div className={'main-container-reviews'}>
             <div className={'left-block-reviews'}>
@@ -50,10 +59,10 @@ const Reviews = () => {
                                 <SwiperSlide className={'slider-slide-reviews'}>
                                     <ReviewItem
                                         key={review.id}
-                                        img={review.img}
+                                        img={yaroslav}
                                         name={review.name}
-                                        job={review.job}
-                                        body={review.body}
+                                        job={review.occupation}
+                                        body={review.testimony}
                                     />
                                 </SwiperSlide>
                             )

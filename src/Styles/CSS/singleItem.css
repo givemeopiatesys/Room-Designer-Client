@@ -1,0 +1,120 @@
+.main-container-single-item{
+    margin-top: 85px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.top-section-single-item{
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+    padding-left: 50px;
+    padding-right: 50px;
+    justify-content: space-around;
+
+}
+.image-section-single-item{
+
+}
+.image-single-item{
+    width: 500px;
+}
+.hr-short-desc-single-item{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 90%;
+    color: #FFFFFF;
+}
+.hr-single-item{
+    color: #282727;
+    width: 90%;
+}
+
+.short-desc-section-single-item{
+    display: flex;
+    flex-direction: column;
+    background-color: #282727;
+    width: 500px;
+    border-radius: 16px;
+    height: fit-content;
+    color: #FFFFFF;
+    font-family: Poppins, serif;
+    padding: 0 30px 30px 30px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+}
+.lower-hr-section-single-item{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 70%;
+    margin-left: 0px;
+    color: #FFFFFF;
+    align-self: start;
+}
+.title-single-item{
+    font-size: 36px;
+    font-weight: 700;
+    text-align: center;
+}
+.price-single-item{
+
+}
+
+.color-container-single-item{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+.under-hr-text-single-item {
+    font-family: Poppins, serif;
+    font-size: 40px;
+    font-weight: 700;
+    text-align: left;
+    margin-top: 30px;
+}
+.lower-section-single-item{
+    margin-top: 75px;
+    display: flex;
+    flex-direction: column;
+    background-color: #282727;
+    color: #FFFFFF;
+    font-family: Poppins, serif;
+    padding: 0 30px 50px 140px;
+    font-size: 20px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+}
+.info-single-item{
+    margin-top: 20px;
+}
+.adjustments-single-item{
+    margin-top: 20px;
+}
+.full-description-single-item{
+    margin-top: 20px;
+}
+.material-description-single-item{
+    margin-top: 20px;
+}
+.color-single-item{
+    width: 24px;
+    height: 24px;
+    border-radius: 5px;
+    z-index: 1;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.order-button-single-item{
+    border: none;
+    width: fit-content;
+    font-family: Poppins, serif;
+    color: #282727 ;
+    font-size: 32px;
+    font-weight: 500;
+    padding: 5px 30px;
+    border-radius: 10px;
+    margin-top: 20px;
+    align-self: center;
+}

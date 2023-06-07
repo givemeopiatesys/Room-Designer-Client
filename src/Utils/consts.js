@@ -1,0 +1,7 @@
+export const BASE_API_URL='http://localhost:8080/'
+export const MAIN_PAGE='/'
+export const CATALOGUE_PAGE='catalogue'
+export const NEWS_PAGE='news'
+export const FAQ_PAGE='faq'
+export const ROOMS_PAGE='rooms'
+export const ABOUTUS_PAGE='aboutus'

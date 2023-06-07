@@ -1,17 +1,14 @@
 import React from 'react';
-import "../Styles/CSS/ItemCard.css"
-import testImage1 from '../Styles/Images/table 1.png'
+import '../Styles/CSS/itemCardCatalogue.css'
 
-// const colors = [{backColor:"FFFFFF"},{backColor: "black"}]
-const ItemCard = (props) => {
-    console.log(props.imagePath)
+const ItemCardCatalogue = (props) => {
     return (
         <div className={'main-container-item-card'}>
             <div className={'title-item-card'}>{props.title}</div>
             <div className={'description-item-card'}>{props.description}</div>
             <img src={props.imagePath} className={'image-item-card'}/>
-            <div className={'color-title-item-card'}>Lets switch color</div>
-            <div className={'color-container-item-card'}>
+            <div className={'color-title-item-card'}>Available colors</div>
+            <div className={'color-container-card'}>
                 {props.colors[0] ?
                     props.colors.map((color) => {
                         return (
@@ -23,4 +20,4 @@ const ItemCard = (props) => {
     );
 };
 
-export default ItemCard;
+export default ItemCardCatalogue;

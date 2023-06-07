@@ -15,6 +15,7 @@
     display: flex;
 }
 .title-navbar{
+    cursor: pointer;
     display: flex;
     align-items: center;
     font-family: Josefin Sans, serif;
@@ -25,8 +26,9 @@
     white-space: nowrap;
 }
 .logo-navbar{
-
+    cursor: pointer;
 }
+
 .links-container-navbar{
     display: flex;
     align-items: center;

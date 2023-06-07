@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import logo from '../Styles/Images/small_logo.svg'
 import '../Styles/CSS/navbar.css'
 import PropTypes from "prop-types";
@@ -6,6 +6,9 @@ import {useSpring} from "@react-spring/web";
 import {animated} from '@react-spring/web'
 import {Backdrop, Input, Modal} from "@mui/material";
 import {ReactComponent as Logo} from '../Styles/Images/logo-big.svg'
+import {login} from "../http/userAPI";
+import {useNavigate} from "react-router-dom";
+
 
 const Fade = React.forwardRef(function Fade(props, ref) {
     const {
@@ -39,6 +42,7 @@ const Fade = React.forwardRef(function Fade(props, ref) {
     );
 });
 
+
 Fade.propTypes = {
     children: PropTypes.element.isRequired,
     in: PropTypes.bool,
@@ -48,34 +52,34 @@ Fade.propTypes = {
     ownerState: PropTypes.any,
 };
 
-const style = {
-    position: 'absolute',
-    top: '50%',
-    left: '50%',
-    transform: 'translate(-50%, -50%)',
-    width: 400,
-    bgcolor: 'background.paper',
-    border: '2px solid #000',
-    boxShadow: 24,
-    p: 4,
-};
 const Navbar = () => {
+    const navigate = useNavigate();
+
+    const [email,setEmail] = useState();
+    const [password,setPassword] = useState();
     const [open, setOpen] = React.useState(false);
+
+    const handleClick = async (e) => {
+        e.preventDefault();
+        const response = await login(email,password)
+        console.log(response)
+        handleClose()
+    }
+
     const handleOpen = () => setOpen(true);
     const handleClose = () => setOpen(false);
     return (
         <div className={'main-container-navbar'}>
             <div className={'logo-container-navbar'}>
-                <img className={'logo-navbar'} src={logo} alt={'Loading..'}/>
-                <div className={'title-navbar'}>Room Designer</div>
+                <img onClick={()=>{navigate("/")}} className={'logo-navbar'} src={logo} alt={'Loading..'}/>
+                <div onClick={()=>{navigate("/")}} className={'title-navbar'}>Room Designer</div>
             </div>
             <div className={'links-container-navbar'}>
-                <button className={'link-button-navbar'}>rooms</button>
-                <button className={'link-button-navbar'}>news</button>
-                <button className={'link-button-navbar'}>about us</button>
-                <button className={'link-button-navbar'}>faq</button>
-                <button className={'link-button-navbar'}>catalogue</button>
-                <button className={'link-button-navbar'}>support</button>
+                <button onClick={()=>{navigate("/rooms")}} className={'link-button-navbar'}>rooms</button>
+                <button onClick={()=>{navigate("/news")}}  className={'link-button-navbar'}>news</button>
+                <button onClick={()=>{navigate("/about us")}} className={'link-button-navbar'}>about us</button>
+                <button onClick={()=>{navigate("/faq")}} className={'link-button-navbar'}>faq</button>
+                <button onClick={()=>{navigate("/catalogue")}} className={'link-button-navbar'}>catalogue</button>
             </div>
             <div className={'auth-language-container-navbar'}>
                 <button className={'login-button-navbar'} onClick={handleOpen}>login</button>
@@ -95,18 +99,20 @@ const Navbar = () => {
                     <Fade in={open}>
                         <form className={'form-navbar'}>
                             <div>
-                                <Input className={'input-navbar'} placeholder="email"/>
-                                <Input className={'input-navbar'} placeholder="password"/>
-                                <button className={'login-button-navbar'} onClick={handleClose}>sign in</button>
+                                <Input onChange={e=>setEmail(e.target.value)} className={'input-navbar'} placeholder="email"/>
+                                <Input onChange={e=>setPassword(e.target.value)} type={'password'} className={'input-navbar'} placeholder="password"/>
+                                <button  className={'login-button-navbar'} type={'submit'} onClick={handleClick}>
+                                    sign in
+                                </button>
                             </div>
                             <Logo/>
                         </form>
                     </Fade>
                 </Modal>
-                <select className={'language-select-navbar'}>
-                    <option>english</option>
-                    <option>russian</option>
-                </select>
+                {/*<select className={'language-select-navbar'}>*/}
+                {/*    <option>english</option>*/}
+                {/*    <option>russian</option>*/}
+                {/*</select>*/}
             </div>
         </div>
     );
