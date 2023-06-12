@@ -77,7 +77,7 @@ const Navbar = () => {
             <div className={'links-container-navbar'}>
                 <button onClick={()=>{navigate("/rooms")}} className={'link-button-navbar'}>rooms</button>
                 <button onClick={()=>{navigate("/news")}}  className={'link-button-navbar'}>news</button>
-                <button onClick={()=>{navigate("/about us")}} className={'link-button-navbar'}>about us</button>
+                <button onClick={()=>{navigate("/aboutus")}} className={'link-button-navbar'}>about us</button>
                 <button onClick={()=>{navigate("/faq")}} className={'link-button-navbar'}>faq</button>
                 <button onClick={()=>{navigate("/catalogue")}} className={'link-button-navbar'}>catalogue</button>
             </div>

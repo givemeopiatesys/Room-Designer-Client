@@ -15,7 +15,7 @@ const CataloguePage = () => {
     }, [])
 
     return (
-        <div style={{background: '#282828', flexGrow: '1', height: '1200px', marginTop: '70px', padding: '50px'}}>
+        <div style={{background: '#282828', flexGrow: '1', minHeight: '1200px', marginTop: '70px', padding: '50px'}}>
             <Grid container gap={6.5} columns={4}>
                 {items[0] ?
                     items.map((item) => {

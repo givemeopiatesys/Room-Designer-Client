@@ -29,6 +29,7 @@
     cursor: pointer;
 }
 
+
 .links-container-navbar{
     display: flex;
     align-items: center;
@@ -62,6 +63,10 @@
     font-weight: 400;
     font-size: 20px;
     margin-right: 35px;
+}
+.login-button-navbar:hover{
+    background-color: #434950;
+    cursor: pointer;
 }
 .language-select-navbar{
     text-align: center;
@@ -97,3 +102,4 @@
 .input-navbar{
     margin-bottom: 50px;
 }
+

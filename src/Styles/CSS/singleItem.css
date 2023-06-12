@@ -14,10 +14,14 @@
 
 }
 .image-section-single-item{
-
+    width: 800px;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .image-single-item{
-    width: 500px;
+    width: 80%;
 }
 .hr-short-desc-single-item{
     margin-top: 10px;
@@ -117,4 +121,8 @@
     border-radius: 10px;
     margin-top: 20px;
     align-self: center;
+}
+.model-section-single-item{
+    width: 800px;
+    height: 600px;
 }

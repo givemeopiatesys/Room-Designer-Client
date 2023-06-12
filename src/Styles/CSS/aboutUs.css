@@ -1,0 +1,42 @@
+.main-container-about-us{
+    margin-top: 120px;
+}
+.top-section-about-us{
+display: flex;
+    margin-bottom: 130px;
+}
+.img-avatar-container-about-us{
+
+}
+.img-avatar-about-us{
+    width: 230px;
+    border-radius: 10%;
+}
+.top-text-section-about-us{
+    margin-left: 80px;
+}
+.content-about-us{
+    padding-left: 50px;
+    padding-right: 90px;
+}
+.title-top-section-about-us{
+    font-family: Poppins,serif;
+    font-weight: 700;
+    font-size: 36px;
+    color: #282727;
+}
+.job-top-section-about-us{
+    font-family: Poppins,serif;
+    font-weight: 400;
+    font-size: 32px;
+    color: #4D565D;
+}
+.description-top-section-about-us{
+    margin-top: 10px;
+    font-family: Poppins,serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: #282727;
+    width: 430px;
+
+}
